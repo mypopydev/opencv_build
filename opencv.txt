@@ -1,0 +1,22 @@
+1. cmake
+
+cmake -L -N .
+
+
+2. Build option
+
+cmake -DBUILD_TBB=ON \
+-D CMAKE_BUILD_TYPE=DEBUG             \
+-D INSTALL_C_EXAMPLES=ON             \
+-D INSTALL_PYTHON_EXAMPLES=ON             \
+-D WITH_TBB=ON             \
+-D WITH_V4L=ON         \
+-D WITH_QT=ON         \
+-D WITH_OPENGL=ON         \
+-D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules         \
+-D BUILD_EXAMPLES=ON \
+-D WITH_VA_INTEL=ON \
+-D BUILD_opencv_text=OFF \
+-D CMAKE_INSTALL_PREFIX=/home/barry/Sources/opencv/install \
+-D INSTALL_PYTHON_EXAMPLES=ON \
+-D PYTHON_EXECUTABLE=~/.virtualenvs/cv/bin/python ..
